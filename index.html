@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>R K FARM</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="R K FARM" name="Pig farm">
+    <meta content="Trusted Source for Premium Pork Products" name="R K FARM">
+
+    <!-- Favicon -->
+    <link href="img/rkhero.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<style>
+    .first-three {
+        color:#004511; /* Change the color to your preference for the first three letters */
+      }
+      
+      .last-letter {
+        color:#00a850; /* Change the color to your preference for the last letter */
+      }
+      
+    .asw{
+        animation: glitch 1s linear infinite;
+      }
+      
+      @keyframes glitch{
+        2%,64%{
+          transform: translate(2px,0) skew(0deg);
+        }
+        4%,60%{
+          transform: translate(-2px,0) skew(0deg);
+        }
+        62%{
+          transform: translate(0,0) skew(5deg); 
+        }
+      }
+      
+      .asw:before,
+      .asw:after{
+        content: attr(title);
+        position: absolute;
+        left: 0;
+      }
+      
+      .asw:before{
+        animation: glitchTop 1s linear infinite;
+        clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+      }
+      
+      @keyframes glitchTop{
+        2%,64%{
+          transform: translate(2px,-2px);
+        }
+        4%,60%{
+          transform: translate(-2px,2px);
+        }
+        62%{
+          transform: translate(13px,-1px) skew(-13deg); 
+        }
+      }
+      
+      .asw:after{
+        animation: glitchBotom 1.5s linear infinite;
+        clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+        -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+      }
+      
+      @keyframes glitchBotom{
+        2%,64%{
+          transform: translate(-2px,0);
+        }
+        4%,60%{
+          transform: translate(-2px,0);
+        }
+        62%{
+          transform: translate(-22px,5px) skew(21deg); 
+        }
+      }
+</style>
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-0">
+        <div class="row g-0 d-none d-lg-flex">
+            <div class="col-lg-6 ps-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center text-light">
+                    <span>Follow Us:</span>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-link text-light" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-end">
+                <div class="h-100 bg-secondary d-inline-flex align-items-center text-dark py-2 px-4">
+                    <span class="me-2 fw-semi-bold"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
+                    <span>+918304914765</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <h1 class="m-0 asw" >
+                <span class="first-three">R K </span>
+                <span class="last-letter">FARM</span>
+              </h1>
+              
+            
+        </a>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#service" class="nav-item nav-link">Services</a>
+                <a href="#products" class="nav-item nav-link">Products</a>
+                
+                <a href="https://wa.me/+918304914765" class="nav-item nav-link">Contact</a>
+            </div>
+            
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid px-0 mb-5" id="home">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block d-sm-none w-100" src="img/RK Farm Poster Final.pdf (5).png" alt="Small Screen Image" style="width: 100%;">
+
+                    <img class="d-none d-sm-block w-100" src="img/rkhero.png" alt="Large Screen Image" style="width: 100%;">
+                    
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <!-- <div class="row justify-content-start">
+                                <div class="col-lg-8 text-start">
+                                    <p class="fs-4 text-white">Welcome to our dairy farm</p>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">The Farm of Dairy products</h1>
+                                    <a href="" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">Explore More</a>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5" id="about">
+        <div class="container">
+            <div class="row g-5 align-items-end">
+                <div class="col-lg-6">
+                    <div class="row g-2">
+                        <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
+                            <div class="about-experience bg-secondary rounded">
+                                <h1 class="display-1 mb-0">25</h1>
+                                <small class="fs-5 fw-bold">Years Experience</small>
+                            </div>
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.1s">
+                            <img class="img-fluid rounded" src="img/rkk.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.3s">
+                            <img class="img-fluid rounded" src="img/rkk.jpg">
+                        </div>
+                        <div class="col-6 wow fadeIn" data-wow-delay="0.5s">
+                            <img class="img-fluid rounded" src="img/rkk.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="section-title bg-white text-start text-primary pe-3">About Us</p>
+                    <h1 class="mb-4"> Trusted Source for Premium Pork Products</h1>
+                    <p class="mb-4">At R K FARM, nestled in the serene locale of Manjiyamkunnu, Ottakkal P. O., Thenmala, Kollam District, we take immense pride in being your one-stop destination for all things related to livestock, specializing in the trading, sales, distribution, and exporting of high-quality meat products. Our main focus and specialty lie in the production and distribution of premium pork products</p>
+                    <div class="row g-5 pt-2 mb-5">
+                        <div class="col-sm-6">
+                            <img class="img-fluid mb-4" src="img/service.png" alt="">
+                            <h5 class="mb-3">Fresh Cuts</h5>
+                            <span>From succulent chops to tenderloins, our fresh cuts are prepared with precision, ensuring maximum flavor and tenderness.</span>
+                        </div>
+                        <div class="col-sm-6">
+                            <img class="img-fluid mb-4" src="img/product.png" alt="">
+                            <h5 class="mb-3">Processed Pork</h5>
+                            <span> Explore our range of processed pork products, including minced pork, ham, and more, designed to add convenience and taste to your meals</span>
+                        </div>
+                    </div>
+                    <a class="btn btn-secondary rounded-pill py-3 px-5" href="">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Features Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-title bg-white text-start text-primary pe-3">Why Us!</p>
+                    <h1 class="mb-4"> R K FARM for Your Pork Needs !</h1>
+                    <p class="mb-4">At R K FARM, we understand that when it comes to choosing a supplier for your pork products, you have several options. </p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Uncompromising Commitment to Quality</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Diverse Range of Premium Pork Products</p>
+                    <p><i class="fa fa-check text-primary me-3"></i> Global Reach, Local Care</p>
+                    <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="">Explore More</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="rounded overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="text-center bg-primary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="img/experience.png" alt="">
+                                    <h1 class="display-6 text-white" data-toggle="counter-up">25</h1>
+                                    <span class="fs-5 fw-semi-bold text-secondary">Years Experience</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="text-center bg-secondary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="img/award.png" alt="">
+                                    <h1 class="display-6" data-toggle="counter-up">183</h1>
+                                    <span class="fs-5 fw-semi-bold text-primary">Award Winning</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="text-center bg-secondary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="img/animal.png" alt="">
+                                    <h1 class="display-6" data-toggle="counter-up">2619</h1>
+                                    <span class="fs-5 fw-semi-bold text-primary">Total Animals</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="text-center bg-primary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="img/client.png" alt="">
+                                    <h1 class="display-6 text-white" data-toggle="counter-up">51940</h1>
+                                    <span class="fs-5 fw-semi-bold text-secondary">Happy Clients</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Banner Start -->
+    <div class="container-fluid banner my-5 py-5" data-parallax="scroll" data-image-src="https://as2.ftcdn.net/v2/jpg/04/20/09/73/1000_F_420097356_2FPDU0faOZnp58eRtOUhdT5zaXFbxCUp.jpg">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-sm-4">
+                            <img class="img-fluid rounded" src="https://images.pexels.com/photos/6826378/pexels-photo-6826378.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <h2 class="text-white mb-3">Stress-Free Environment</h2>
+                            <p class="text-white mb-4">Our pigs are raised in a stress-free environment, providing them with ample space to move, play, and interact with each other. This not only ensures their physical well-being but also contributes to the superior quality of our pork products</p>
+                            <a class="btn btn-secondary rounded-pill py-2 px-4" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-sm-4">
+                            <img class="img-fluid rounded" src="https://images.pexels.com/photos/4508756/pexels-photo-4508756.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <h2 class="text-white mb-3">Balanced Nutrition</h2>
+                            <p class="text-white mb-4">We employ a carefully curated feeding regimen that is nutritionally balanced and suited to the specific needs of our pigs. This ensures they receive the right nutrients for healthy growth and development, without resorting to harmful additives or hormones.</p>
+                            <a class="btn btn-secondary rounded-pill py-2 px-4" href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5" id="service">
+        <div class="container">
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Our Services</p>
+                <h1 class="mb-5">
+                    Services Offered by R K FARM</h1>
+            </div>
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/Livestock.png" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/Livestock.png" alt="">
+                            </div>
+                            <h5 class="mb-3">Livestock Procurement and Rearing</h4>
+                            <p class="mb-4">Our expertise in livestock procurement and rearing ensures a consistent and reliable supply of high-quality pigs.</p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/Meat Processing.png" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/Meat Processing.png" alt="">
+                            </div>
+                            <h5 class="mb-3">Meat Processing and Packaging</h5>
+                            <p class="mb-4">R K FARM is equipped with state-of-the-art meat processing facilities, adhering to the highest industry standards. </p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 pt-5 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item d-flex h-100">
+                        <div class="service-img">
+                            <img class="img-fluid" src="img/Global Export Services.png" alt="">
+                        </div>
+                        <div class="service-text p-5 pt-0">
+                            <div class="service-icon">
+                                <img class="img-fluid rounded-circle" src="img/Global Export Services.png" alt="">
+                            </div>
+                            <h5 class="mb-3">Global Export Services</h5>
+                            <p class="mb-4">With a reputation for excellence, R K FARM extends its services beyond domestic borders, offering global export of premium pork products.</p>
+                            <a class="btn btn-square rounded-circle" href=""><i class="bi bi-chevron-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Gallery Start -->
+    <!-- <div class="container-xxl py-5 px-0">
+        <div class="row g-0">
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgVFhYZGRgaGhkfHBwcHB0fJBwlJB4cISEdHiEeIy4lHx4rIR4YJjgnLS8xNTU1GiU7QDs0Py40NTEBDAwMEA8QHxISHzYrJSw0NDQ0NDQ9NDQ2PTQ0NDQ0NjE1NDQ0NDQ0NDQ0NDQ0NDQ0ND00NDQ0NDQ0NDQ0NDQ0NP/AABEIALQBGAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABQYCAwQBB//EADsQAAEDAgQEAwcDAgUFAQAAAAEAAhEDIQQSMUEFUWFxBiKBE5GhscHR8DJS4RRCFiNicvEHM4KS0hX/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAQIDBAX/xAAqEQACAgICAgAFAwUAAAAAAAAAAQIRAyESMUFRBBMiYYEyM3EUkaGx0f/aAAwDAQACEQMRAD8A+zIiIAiIgCIiAIiIAiIgCIiAIiIAiLxAeoiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgPERan1QFDaXZKVm1Fg2oCoXi/FyxwawE/uI+QPNQ5JKyYwcnSJerXDe/JaaWMBMEQuGk4uAdESNDstVbGU2auk9LrJ5HejZYlVeSadWaATIgKj8e8UQ+KbrAxcflyVIjjjJ/S6Fm/GYesCx4EH9w+IOx6qryN6NsWL5b5SjZw4bxcI84OYcj81MYDiwrDykiNv8AhQWP8JtcA6g+L3a4y0/7TqD3lcfDQ+jVDXNLdiDa3Tmq215NXDFNPiqZfcNiCTlPoefTuutQ7DcHkQYUizENI1A7reErWzhnCno3otQxDf3D3rYCr2jOmZIiKSAiIgCIiAIiIAiIgCIiAIiIAiIgCIiALxYvcAJK4KvE2CfM33qrkl2WjFy6JFcWJ4ixtpk8hf5LhZVLxLiXCbAaDvzK2HIwTACo8no0WPez3+sqP0ZlbzcYn0ErMVCo6rxHNOUjudFHDiTjLgfKN/3duixc7Z0RwuuqLFMjUidwtfswNLqJwfGQTDgREST+aKTo1munK4Htsp2VcHHsieLcRJJY05QNToSeXZQr6pP6bzp91bsXgadUeZoJ5ixHqoPFcEcxp9mS7S1gY377clDRvinCqeiMps3JjlzPYbLGq7kPzqV6KZ3kHcb/AB/Oi9z2tAA/PeqnUu9GWBxVSm6Wnu3Y9wprEBuKY0tdlqN0HeMzecGBccgoFoE7dSVuoVHNc17W6biTPT+FKM8kLfJaZNYXiTWsh5iLST972Ugyq0gEEEc1rFJldgc5paSLOHlcPX6GyqDqdWhUe1jgcpPOCNQY7Qpo5lxk34ZdyQtlN8aEhUqlxSu0g5g4cj9N1JYfxKzNle0jqLj3awltCWK1rZb6eKB1sumVTa1HOfaYepB/uaDAd9ipvhvECWjM0jYjcHktY5PZzZMVK0TCLFrgRIWS2MAiIgCIiAIiIAiIgCIiAIiIAiIgIHxDVcMrQSAQSYME8hZQ9DCucRb7N/lbOPYn/PcDtlA7QD9VvxGNyUhEdSTA9J19FzSkm2ejjhKMFS7Oiri2U2gA7abqMqOc+XPOVg5nVRv9U4OnJnNoBJgdYXtaq993wOTRt/Kyk3I3jjUf+nlfEl/lbZt+5W6lMAARbvCxpMA0ELopmLnl9FMY0TKa6SNbMNHzv8ys8LisjwZMaO6zMAdBay5n1cx5NHx/PqtZaSBHP4/lleyjjfZdGG6PIXBwdxLXCZg/T/ldtdpMAbqH9jla3TIrjPDvatlsZ2/pm0/6T0+SqrKrQ2HBuY8zMbEROqu9UObqvnHFuINZjKrGCD5XSYORx1yg2mbzc3sh0YZOq8EgWEDM7yN2Lhr2ESfkumlxU0hDZgifNEnqBs3VREk+ZxLnG95Mnedz/K7KtNoLPbOcTAhjdRv5nbX21Ai6qdDpras7cN4qfmcXAZeW/wANVK1zTxbJZAe2cp07tPQ/BU/EsZmOUudpcwAOltgPku/glRwrNDTAMyAOV9PRT0ZzxwkrSph9BzSWv8pG03Fu8LBrdgJjU2A9SVa+KcPFVmkPAkHnr5T0PwlVd9vK+2UmW8uivZinZ7h3va4OYfMP/Ud9yrVgOJNqWiHWkE69jv2VTe884C9pvMyPeqvXRfipaZ9Co13N005KQpVg7vyVV4LiXvZ5jJad+UW+q7KuPbTcGudlJEtJ+6vGbRyzw7ryWNFwYTHB1j6HYrvW0ZJq0csouLpnqIisQEREAREQBERAEREAREQFT43QpUajqzr5gCAbwbiw627R7q3WxbqlQOeQ1uwucvXqfkrF4uZmqU2gAuI1O1yqxDWOIbciRmI35gbBck19TR7Hw/7ak3uv8HXcDUgHSbF3WOSxz9R6Lju4zPfcrto0jAMQOZNyoRMkbWDcz23Wb6gAiJ/NFrNSDA135/whAGvry10CNkKJzPBOvcx+dV0U3BozON5s0fc/NaBVHmdqf+P4XPUrhzwI52+n19OiWX4+y3+HWkMLnHzPdmjkNvqfVSRMOaDMyY926qNLFuY9hzWJa0k8pF/SFbWumHcipfRxZIu7fkYhoK+X+JeC1KWLfiYzsqEQRPkIaAc22gkH8P0zFOOyisQWvaWvaCCCHA8lWy+NuOyoUyaYFQznjygAQ21iZEZ+m3dYsbJL3udvJ1Pa/P8ANF7WY2kfZhxc4PPZoIaW5uboJ+K0DEm5bEwRMAxtInc8xdWOtO+je7EgAsYwEwLwJHr+BTfhfBzme4C9h2/I9yg8DiWjy5Q6SDedtAekbK1cAxDPZi4BzGdrlRZXKqi6RPgCyrfinAjy1QBP6XEAehM+73KxNHrPdace0ZHA6EQexsfgnTs413oobKQNwPff5WW6lhnlwDRJJXRTeASDh3uAMWL/AKAAqQbxT2YGXD5J3IPx3Us3Tl4JnheC9myD+o3P2WjxBhi+i6BLmeZvpqPdK6MHxBlRtjfkbH3LN5INlHIxp8t9lS4ZxhzIBkt3H2V14bxQPaDMg+8L53xjDmhXcz+x3nZ2O3oZHoprwriic7TpYj5H6LRNraJnCMo2fQgV6uHh9UkEHbTsu1bp2rOBqnR6iIpICIiAIiIAiIgCIiAiuL4cEB8CRaeh/n5qp1eHlok2BNp1PVXPilLNTLc2U7HqqjxCq1ztZAECQY78pWGRbO/4WTqjibl0bHYDMe5IXr3HTfcnX+Oyym0B1ugj5LU8QNO6zOvyYOe1g5n81jZcLsWXkTpPv/hb3tJ1EfnRYeVhzRLhzFh1jSfkqs0jr+TU55J6fnxW3C4bzFxNo+A27k/NamAPygDy79e3c2XYXhoA2kfx+dEREt6Rli3F5aNxJ7fwBKueA/7bRvlHyVJc8hjuon0kD6fFW3gDy6kwnXKNd+R90K8dnLnVJfY246rEd7/ZRuI0JJ0jTcRutuJc7MQCSLyOZuuUvAEweRB3VWtlUqRT8TQBxdbM+GSwZiP9DdBvAN+69p4WxJc2QJGsn3D106KOZUz1aj5/W92UC5I0m2ggBTOHw7zDWyc1rR89FNnTGNLsyw+Fdmind1ifLyjQkC88vurRwbg2TzvjNs39vfaVnQrUcM3KTmdaYv8A8Ltw2ODwXZYG0mCVGrMpznx0te/Z1gX+P4Vw4zGsyubMmCsK2PziG2nnt0PwUNjaTibAhwNxz6f7o05qJNvaKY4K/qIHijAKx8wBLQTcyDf7arpw1R4Aio/0dIUP4jqvFdpu0+zaNdYc/Xqs8NiSY8zp6b/yrVo1TV0yz0OIvBkta/kS0A9bgKcwfEGPEHyu5H6Knsqncn3LopVXfgVXZd44y+xO8f4QK1IkDzsBLXanmW9QfnCjfCZDc4m5gx9VLcHxhJhx0EiN+8LSzhwZWe9oID4IE2F/NHrf1Csno5pJxbiydwtcNOY6bqZVdaPLB0Nj6/nwUpwrEZmQTLmnKfTdbY3qjkyx8neiItTEIiIAiIgCIiAxheEwslVuPY+r7dlFh8pjMIvfmeUKspcVZpixvJKkd3GMQcpiYjaJ73VWe23639jk+ys2KaXW8sWmfp91EY7CezaTTomo4u/dp1uRHzWEneztw1FURr3hogvcCdrSB15LQ98CA4++5/OS5cj5d7RrWOOjRt3JXQ1hJsRDdXSI9+izs6+NeTH2b3AkabzAha/Zl0ZoIA/a0T1NlsbUiRAtqdflZeHy+ZwMHnv0CWTTD6gEDb9uhPZaG5nOLjYCT22AHSx9yydg3vh72kN1GwA6H4Jmi20gnqdAOw+idlqSQqglwYL2az1MW9ICvuDpBjAP2tE+kfYe5UnhVYNrMc4SJPWSRqB6tVyxFYhgB1dr6bfnJXXRxZ07SONzpv3hRvFcQGUXvdYNa4n0BldWJO7fVVnxVTfVphjHENqPYHW0AMk+4dOqgQVld4KxzmNaBL3AGB9dom/zVoZiTSYIdmfETs3mG9eZ6WUe2u2m32VAFxcAHOjzO7CLN6aKSwWHbTdmrZZA/RYyf9TvUmAVVs7FGltfg5MbULGh7yQXfpJGp3g6FcHDuP1jU8uapEmI5Cbe7RWY8XbWlrqYew/2kSLbAER7iujhvD8PSBexmTNEzNuViYapUY92ZyzuKcZR2asBjRXYX0gGvbMtucw7HQardWxDCw1C9gaxuZx2AFy10/ArxmAYSXU35DzH1j5qm8UFbE1nspPYaQIvIbnIAGYiCSJmNefJStmWm76I6tjXVahqEA5yTFzlHLb7aqcwOAeW53DK3Ym38+gXVw/wy9gktYezvuAVLDhlWwyZoG5bbtfurNvwQq9ka2k82AkCb2+Uz81tpN2Km8Lwh7b54nYD4LupYAiLg7/pHwVKbLPLFdM1YLCBgg662n4wtuMaYD27C4PLmF3O7LHKZ+ql6Rz8nJ2zjoVMwjmunhgy1yBPmaZ5WiD0N4UDh+KNbiKlF3lId5eTgQHD4EKycLow8vmxEdZkfCArw7KZFSZNIiLoOQIiIAiIgCIiA5cbXyMc7kLd9lWuGZ3VHVC2JJlzt+jR+0WvKsuMplzC0AEnSe6peKqupuZ7SM5qOaAbGwLswvDhAJv0WGW7Xo7fhUnFpdv/AES3Ea7KMvqPMugNb16fmyqw4u+HBhIaSSdT7p0Xr/8AMqOLs7z/AGSBDRFwBPx5FcWLhnlGvRZcrO2GHiqe2SVTFUqrG+0cWvg3Akgdf5UXiazSBTYTbVx1J7aAbfdam4d+XSCb3N463WQwcH/UQIA2SrNFUeg2u5nla0u5C0dzz9YCxpYmX5ny7eBc+/l1C01Xhl3X6cztPRacMDBfH6r/AJyUUXTJHFcUe8tzHyjRoG8fHbVYvMNDTrcnuYEW2AlcVAeaSu7D0ydgRrHPl9EREqSomvDeFzuaT/bcDsP/AKj3Kax1QZw29gt/DMN7JhkQ43dvB5dh8yo/FuJdn3+YVn1RwuXKTfgwxFSOypnFsz8QBmyMbIcST5iYMAC7jHYeYCVY8bj2taXn9IEmL6bBVvAs8j6hAl+ZwA/taTMdyY7D1irZv8PDZI4TBs9uwe0AYIeZIaBlEgHaZjmbrs4jh8K90uxNLNt/mN+EFVjH45n6GjNpNwJPW5kLQOHVn+drI6Ni/cIkn2dM4Si+SlRZqdBjrU8Yxx2b7QSO1wSpXAiuLOe17Z3ykjpaPiqlwvg9Su4sIa0C5zCB8DJULx14dU/pcGwOywHvbN3WkN5NBkTvpoLyoq9HPKV6bv8AB3eLfFL3vfh8PDGAlr3g3edwCLBuotrfZcnB8K+C5zjmkRJ/LfwuvgnAaFIj29SHWs2NzcF4s0R39FY6ecZm0Q0Uixz2kCc2WNzJdeRHTur14QTSVHNha72XNWPX5qdwDqnkeauZpg29OfSVR+LYJ5r5Ggtz5Tc6Ty3Vz4fg/Zta08gYJsIsNVRpo0ycFFU+/wCCzsrtnQ+/v9AshibTAj1O8ac9FFtri/OCR3sb+5b6cw4RDi2fWTEdre9WTs8+UUje/GeUOgQROmkQo3H8WDGl7naCY3/CttaqMjswiGuPw29VR+K8Ta8FrvLmgsBnQO1MaTe5USVtI0gkk3R7jOKe0qmqQGmW21iIAnrZXngfFg8C8PGo59uY+6+Z0q+W412i8e/dS/h/GBtdmZ1iSDewJBA+JC0arohx5Rpn1+hUzAFblG8PfFlIgrWLtHBJU6MkRFYqEREAREQHirfiUxMBsxJJGxgH1IEe9WNVfjcmq4G4yAhs6jMJ/Oqpk/Sb/DfuFPqPexxyl7WAnMWzlEftc49tTM2XJii92Ulwe4G8ghxHcGHBZ49lQuvAax1nOcAxsTHliSdDvMLzhoOZpac9wZc0hrSIjf4n3XXLWj2otxeico8Iquo54II/tIgkD4z0soyrmvMg+4qwU+N1nPLKdMOaIBdoATuZ0FjbptK0YqszEPNJrvO2MzwLA3kdvuEfWjGMpcvrS968IpT2vzZiDrbcR9N1ufiCbA8phWHE+Hi0AtqNJ3LyG66AACR681X+IYZ1C7gMpmHNlzSepGh6GCo2uzePCb+lmyiQAbASLetzb3Kf8OUQ+q0Efo83S0D5kFV/hLxXcG07umBItHMnZfQOH4JlJmVsZiPMdyfXbWymO2ZZ38tV5Z2Yh1o6Tv6aHRRT32gBSD2jlA7m3x3UbxXKxjnucGNgy4mAOpn1Wrj5PPhJXRXMZSz1mNj+6SIBaY3dcWFj1gKM40A0hrqsaTlYXTPNwMDsofDeJHurPc2Sx7oLQAHtBhoeDFxpIOhPYqarcPFTK5rnxlk5nNGQGf1NdlLfcVk4tPZ6uCUV0zHh3AWP8xeDOhBPydB+ELsYaLXFjqoblmcsl08iHCATylYYGo1rhSc9r2nnmAjSQcp+3VaPEeCZhi11KAx7RlMWZMkuPMxJaOhsAFK2UyOXL6nrwa/EHGs7W4LDB0H/ALrzlJAuTcCxiZOy0YNuHpMNNlVoJHmIY+T6xpty0UPgHuBhgAkEXvrqTOp6ruazI0taAXH9To05/JaUkZRi29HRLHnI6q5tNv6QYJkxMCbafAI6sxhijmiLZ39wSAIiZ20WeH4cC0QwvMGZbbpBm8X1FtoWjEVaVB2V5BsPK3zEeu2uhVe+jVRr9RL8AAfiGmo06i+aQToJtOnyV7xFIFsQJGn2XzjA8doMOf2b4GX9omTqL6qTf45e6cmHaJnKXPLuerQB7pUq/JzZ4OUk4lmoxJ6i3z+yyFZwqMsS32cEwTcEOA79OqpH+IMU4El0CQSQ1ltbfp0N7rt8PY6q6sSSXAtJcSbj6weWijoq8T22yS8R417KNTIx+YiIDXm0mTYaQNVQqNZz7nb9OaDE6gj0X152Ic0N7m3W38rXT9iZIo0g4mScjSSSbyY1UxkUbpaR82w3DnPMwXT+wfKLBWThvhaq4tOUMuP1GTG9tj0VypPAIa1rW2GjQPgNNVkahDolT2V+Y10dtJsARNl1UsSJANiVDtq7TcxHWZ/j3LEVbjnDTI+StGVGEoWWVFi0rJbHOEREAREQHihfElDNTzAeZpEHcSYt3kDsSppaq9EPaWuEgiCokrVF8cuMkz5fjHFzS0ND6r7Uw2wtq4za1xfVYUMQ8QDh2PhlmB4bJJu7q6NBOp15T3FOD/0rjVpNdUs6BIlpJmRMAjURb1VToYlou14LmvaXNLspiQYIMc/TdcrUl2e3jljyJ09EriuJ4ikIbhMrDJc0VczhPMgAjnc76rgHDK2UV8OID75HOuAepMHU7jQX5cmJrua97mvp1M5c7LnGZoBs3K0gEgADyzYKHrccqNMQGWkSxontI0U0yYqK878lx4dTrvGXEtY0tjK9rrgTuNOXdSD61Kk0Bp9qHk5gAHZjABmPKNvcvnz+NPu4ObNpLWi3cgfBbsNxxjCHPIedg5xIHe9/koalRNQbu/wi+0+OtayG02t5aW9yiq3GXtdmnM79WVrrARfMdJPJVlvEnVbsbN9QLDtFls/paz4/UOyRxybtmc54oqku+y1U/GVPKS9rmOAJym4f0buCetlU/E/Hn4tvs2jLSBBjd5GhdtrfKPitzOAPdcgzzK7sP4ZctlaOB8LtaKK3AvYczbHmFaaXFaL2g1c7HxDi0EgwNYHNWSh4ZB1krvp+GGAfoHuVnDl2I5/lv6ShO47TYSWMqPcB5SQGz3gkwtlbibcU0HK0ezb+gvu7mTmguI5DQSrhivCrTo34KMf4LZMhsHmJCj5aXRp/Vuf6vBA4ajnswSbaD6Dks6nGaGFa4Ob7Z+mSBlaeZfsdZAlWL/CTzPndfXae8arW7wEHCDb0VXHeyX8UqqOilf8A7WIxNnOysOjGjK33Tf8A8iV63CC3Ianb0Vww/wD04ewEMqGJsCP5H1W+j4KxLQLNdfTNAHwMp10iyyr2ir4WsGE2Ba5sEEa9e/XuvcIWebUWOh0+9uysPEfCeLe4kUh6On4mFyV/DVdg89OqTtkaHDtOYH4KGzSLT6a/uceCeXZgAXZWkz0m8/Mb2Ux4YwTy8vy+QtInmTGnTVR2GY+nJFLFscREinm36GR/CsPBOJtGYVHVGxpnpOZ6AgXVNFppqLomMT/btLzHwj6rHJ5oba4PvXE/iLHublZWe1pN20nR3uB8FJ0uK0iQfZVGZf3Mc2/UkXUaOdxkl0SNNoDs3QD4i/yWnFDLJ23+QWLeK4ch01Gt1mTED8C0cQ4rQDYNTOSLNY1zj0nKDHqptGShJyqmZU6ji9kaAX/hdbGjzOtZo+w+ajcHiXOBOWoAHNgOpuBcN7QSZM9vRdtCnWe8A03Bk3LoaI5ga67QFMS+SPvVE/h32HYLpBXPToRqugBdCPPZ6iIpAREQBERAYFoOoUPxDwxhKxmpQY488on36qaXhUNJkqUo9Oips/6e4AGRSHvP3XV/gzB6eyae4n5qxolL0XeWb8srrfB+EAgUaYH+1v2Xg8HYQGRRpg88jfsrGiUiPmS9kO3gFMaALIcDp8lLIpK2yObwhg2WxvD2DZdqIRZztwjRssxQC3IgNJoBef0zeS3ogNIoN5LIUhyWxEBgGBe5AskUUDGAkLJFIMcqELJEB5CQvUQGo0gdQD6BG0WjRoHYALYiE2xCL1EICIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiID//2Q==" data-lightbox="gallery">
+                            <img class="img-fluid" src="data:image/jpeg;base64,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" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-1.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-1.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-2.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-6.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-6.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-7.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-7.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-3.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-3.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-4.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <a class="d-block" href="img/gallery-8.jpg" data-lightbox="gallery">
+                            <img class="img-fluid" src="img/gallery-8.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Gallery End -->
+
+
+    <!-- Product Start -->
+    <div class="container-xxl py-5" id="products">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Our Products</p>
+                <h1 class="mb-5">Our Products For Healthy Living</h1>
+            </div>
+            <div class="row gx-4">
+                <!-- <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="product-item"> -->
+                        <!-- <div class="position-relative">
+                            <img class="img-fluid" src="img/rkproducts1.png" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                            </div>
+                        </div> -->
+                        <!-- <div class="text-center p-4">
+                            <a class="d-block h5" href="">Pure Milk</a>
+                            <span class="text-primary me-1">$19.00</span>
+                            <span class="text-decoration-line-through">$29.00</span>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="product-item">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/rkk.jpg" alt="">
+                            <div class="product-overlay">
+
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href="https://wa.me/+918304914765"><i class="bi bi-cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5" href="https://wa.me/+918304914765">Fresh Meat</a>
+                            <span class="text-primary me-1"></span>
+                            <span class="text-decoration-line-through"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/rkproducts3.png" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5" href="">Dairy Products</a>
+                            <span class="text-primary me-1">$19.00</span>
+                            <span class="text-decoration-line-through">$29.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="product-item">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/rkproducts4.png" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-cart"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5" href="">Organic Food</a>
+                            <span class="text-primary me-1">$19.00</span>
+                            <span class="text-decoration-line-through">$29.00</span>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Product End -->
+
+
+    <!-- Team Start -->
+   
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Testimonial</p>
+                <h1 class="mb-5">What People Say About Our Rk Farm</h1>
+            </div>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-img">
+                        <img class="img-fluid animated pulse infinite" src="img/testimonial-1.jpg" alt="">
+                        <img class="img-fluid animated pulse infinite" src="img/testimonial-2.jpg" alt="">
+                        <img class="img-fluid animated pulse infinite" src="img/testimonial-3.jpg" alt="">
+                        <img class="img-fluid animated pulse infinite" src="img/testimonial-4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="owl-carousel testimonial-carousel">
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="img/testimonial-1.jpg" alt="">
+                            <p class="fs-5">The freshness of Ark Farm's pork is a testament to their commitment to providing only the best. Whether you're a seasoned chef or a home cook, Ark Farm's premium pork products are sure to elevate your culinary creations.</p>
+                            <h5>Oliver</h5>
+                           
+                        </div>
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="img/testimonial-2.jpg" alt="">
+                            <p class="fs-5">Ark Farm's commitment to quality is unmistakable. Every purchase from them has been a culinary delight, with their pork products consistently exceeding expectations. From succulent cuts to a rich array of flavors, Ark Farm delivers an unparalleled experience that reflects their dedication to top-tier quality.</p>
+                            <h5>Emily</h5>
+                           
+                        </div>
+                        <div class="testimonial-item">
+                            <img class="img-fluid mb-3" src="img/testimonial-3.jpg" alt="">
+                            <p class="fs-5">What sets Ark Farm apart is not just the outstanding products but also their dedication to customer service. The team at Ark Farm is not only knowledgeable but also genuinely passionate about their offerings. They go above and beyond to ensure that customers like me are not just satisfied but delighted with every purchase</p>
+                            <h5>	Harry</h5>
+                           
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Our Office</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>najiyamkunnu,ottakkal,tenmala</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+918304914765</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>rkfarnottakkal@gmail.com</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a href="#home" class="nav-item nav-link active">Home</a>
+                    <a href="#about" class="nav-item nav-link">About</a>
+                    <a href="#service" class="nav-item nav-link">Services</a>
+                    <a href="#products" class="nav-item nav-link">Products</a>
+                    
+                    <a href="https://wa.me/+918304914765" class="nav-item nav-link">Contact</a>
+                </div> -->
+                <!-- <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Business Hours</h5>
+                    <p class="mb-1">Monday - Friday</p>
+                    <h6 class="text-light">09:00 am - 07:00 pm</h6>
+                    <p class="mb-1">Saturday</p>
+                    <h6 class="text-light">09:00 am - 12:00 pm</h6>
+                    <p class="mb-1">Sunday</p>
+                    <h6 class="text-light">Closed</h6>
+                </div> -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p>Welcome to  RK Farm Newsletter</p>
+                    <div class="position-relative w-100">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-secondary text-body copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-semi-bold" href="#">R K FAM
+                    </a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="fw-semi-bold" href="https://innodotstech.com">© Innodots Innovations </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
